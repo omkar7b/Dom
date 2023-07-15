@@ -68,10 +68,23 @@ for(let i=0;i< li.length;i++){
     li[i].style.fontWeight = 'bold';
 }
 */
-
+/*
 var item2 = document.querySelector('.list-group-item:nth-child(2)');
 console.log(item2);
 item2.style.background = 'green'
 var item3 = document.querySelector('.list-group-item:nth-child(3)');
 item3.style.display = 'none'
+*/
 
+var item2 = document.querySelectorAll('li:nth-child(2)');
+console.log(item2);
+
+for (var i = 0; i < item2.length; i++) {
+  item2[i].style.color = 'green';
+}
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+console.log(odd)
+for(let i=0; i<odd.length;i++){
+    odd[i].style.background = 'green'
+}
