@@ -60,11 +60,18 @@ for(let i=0;i< items.length;i++){
     items[i].style.fontWeight = 'bold';
 }
 console.log(document.getElementsByClassName('title'))
-*/
+
 
 var li = document.getElementsByTagName('li');
 console.log(li);
 for(let i=0;i< li.length;i++){
     li[i].style.fontWeight = 'bold';
 }
+*/
+
+var item2 = document.querySelector('.list-group-item:nth-child(2)');
+console.log(item2);
+item2.style.background = 'green'
+var item3 = document.querySelector('.list-group-item:nth-child(3)');
+item3.style.display = 'none'
 
